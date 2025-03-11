@@ -5,8 +5,6 @@ if (isset($_GET['error'])) {
     $error = htmlspecialchars($_GET['error']);
 }
 
-gwapo
-
 // Include the database configuration file
 include('../database/config.php'); // Adjust the path as necessary
 
