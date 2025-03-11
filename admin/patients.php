@@ -63,6 +63,11 @@ $conn->close();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manage Patients</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
     <style>
         /* Additional styles for the form layout */
         .form-group {
@@ -87,10 +92,10 @@ $conn->close();
             <h2>SCMS</h2>
             <ul class="menu">
                 <li>
-                    <span class="toggle dashboard">Dashboard</span>
+                    <span class="toggle dashboard"><i class="fa-solid fa-house"></i> Dashboard</span>
                 </li>
                 <li>
-                    <span class="toggle">Patient</span>
+                    <span class="toggle"><i class="fa-solid fa-hospital-user"></i> Patient</span>
                     <ul class="submenu">
                         <li><a href="patients.php">Add Patient</a></li>
                         <li><a href="view_records.php">View Records</a></li>
@@ -99,20 +104,20 @@ $conn->close();
                     </ul>
                 </li>
                 <li>
-                    <span class="toggle">Medicine</span>
+                    <span class="toggle"><i class="fa-solid fa-capsules"></i> Medicine</span>
                     <ul class="submenu">
                         <li><a href="medicines.php">Add Medicines</a></li>
                         <li><a href="#search-filter-medicines">Search & Filter Medicines</a></li>
                         <li><a href="#expiry-date-tracking">Expiry Date Tracking</a></li>
                     </ul>
                 </li>
-                <li><a href="#settings">Settings</a></li>
+                <li><a href="#settings"><i class="fa-solid fa-gears"></i> Settings</a></li>
             </ul>
-            <a href="login.php" class="logout">Logout</a>
+            <a href="login.php" class="logout"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
         </aside>
         
         <header class="header">
-        <div class="admin-info">ADMINISTRATOR, <?php echo htmlspecialchars($username); ?></div> <!-- Admin info on the right -->
+        <div class="admin-info">ADMINISTRATOR, Hi <?php echo htmlspecialchars($username); ?></div> <!-- Admin info on the right -->
         </header>
         
         <main class="main-content">

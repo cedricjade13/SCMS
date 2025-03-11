@@ -2,10 +2,14 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
     background-color: #f4f4f4;
 }
 
